@@ -41,6 +41,8 @@ def main():
                 log_event("player_hit")
                 print("game_over")
                 sys.exit()
+            if shot.collides_with(objects):
+                objects.split()
         
         for shot in shots:
             shot.draw(screen)
